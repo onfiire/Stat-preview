@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --clr-900: hsl(233, 47%, 7%);
+    --clr-800: hsl(244, 38%, 16%);
+    --clr-700: hsl(277, 64%, 61%);
+    --clr-100: hsla(0, 0%, 100%, 0.6);
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+  justify-self: start;
+  height: 600px;
+  width: 850px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--clr-900);
+  height: 100vh;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--clr-800);
+  width: 1700px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: 90px;
+}
+
+.title {
+  font-size: 50px;
+  width: 599px;
+}
+
+.title span {
+  color: var(--clr-700);
+}
+
+.description {
+  color: var(--clr-100);
+  width: 500px;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.stat-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: end;
+}
+
+.quantitie {
+  display: grid;
+  grid-template-columns:0.9fr 0.9fr 0.9fr;
+  width: 100%;
+}
+
+.stat1,
+.stat2,
+.stat3 {
+  font-size: 30px;
+}
+
+.name {
+  color: var(--clr-100);
+}
+
+p {
+  color: white;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
